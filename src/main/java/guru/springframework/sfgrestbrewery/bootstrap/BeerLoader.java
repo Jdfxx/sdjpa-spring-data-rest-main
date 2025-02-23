@@ -1,7 +1,7 @@
 package guru.springframework.sfgrestbrewery.bootstrap;
 
 import guru.springframework.sfgrestbrewery.domain.Beer;
-import guru.springframework.sfgrestbrewery.domain.BeerStyleEnum;
+import guru.springframework.sfgrestbrewery.domain.BeerStyle;
 import guru.springframework.sfgrestbrewery.repositories.BeerRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -68,7 +68,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("Mango Bobs")
-                    .beerStyle(BeerStyleEnum.ALE)
+                    .beerStyle(BeerStyle.ALE)
                     .upc(BEER_1_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
@@ -76,7 +76,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("Galaxy Cat")
-                    .beerStyle(BeerStyleEnum.PALE_ALE)
+                    .beerStyle(BeerStyle.PALE_ALE)
                     .upc(BEER_2_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
@@ -84,7 +84,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("No Hammers On The Bar")
-                    .beerStyle(BeerStyleEnum.WHEAT)
+                    .beerStyle(BeerStyle.WHEAT)
                     .upc(BEER_3_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
@@ -92,7 +92,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("Blessed")
-                    .beerStyle(BeerStyleEnum.STOUT)
+                    .beerStyle(BeerStyle.STOUT)
                     .upc(BEER_4_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
@@ -100,7 +100,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("Adjunct Trail")
-                    .beerStyle(BeerStyleEnum.STOUT)
+                    .beerStyle(BeerStyle.STOUT)
                     .upc(BEER_5_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
@@ -108,7 +108,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("Very GGGreenn")
-                    .beerStyle(BeerStyleEnum.IPA)
+                    .beerStyle(BeerStyle.IPA)
                     .upc(BEER_6_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
@@ -116,7 +116,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("Double Barrel Hunahpu's")
-                    .beerStyle(BeerStyleEnum.STOUT)
+                    .beerStyle(BeerStyle.STOUT)
                     .upc(BEER_7_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
@@ -124,7 +124,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("Very Hazy")
-                    .beerStyle(BeerStyleEnum.IPA)
+                    .beerStyle(BeerStyle.IPA)
                     .upc(BEER_8_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
@@ -132,7 +132,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("SR-71")
-                    .beerStyle(BeerStyleEnum.STOUT)
+                    .beerStyle(BeerStyle.STOUT)
                     .upc(BEER_9_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
@@ -140,7 +140,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("Pliny the Younger")
-                    .beerStyle(BeerStyleEnum.IPA)
+                    .beerStyle(BeerStyle.IPA)
                     .upc(BEER_10_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
@@ -148,7 +148,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("Blessed")
-                    .beerStyle(BeerStyleEnum.STOUT)
+                    .beerStyle(BeerStyle.STOUT)
                     .upc(BEER_11_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
@@ -156,7 +156,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("King Krush")
-                    .beerStyle(BeerStyleEnum.IPA)
+                    .beerStyle(BeerStyle.IPA)
                     .upc(BEER_12_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
@@ -164,7 +164,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("PBS Porter")
-                    .beerStyle(BeerStyleEnum.PORTER)
+                    .beerStyle(BeerStyle.PORTER)
                     .upc(BEER_13_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
@@ -172,7 +172,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("Pinball Porter")
-                    .beerStyle(BeerStyleEnum.STOUT)
+                    .beerStyle(BeerStyle.STOUT)
                     .upc(BEER_14_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
@@ -180,7 +180,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("Golden Budda")
-                    .beerStyle(BeerStyleEnum.STOUT)
+                    .beerStyle(BeerStyle.STOUT)
                     .upc(BEER_15_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
@@ -188,7 +188,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("Grand Central Red")
-                    .beerStyle(BeerStyleEnum.LAGER)
+                    .beerStyle(BeerStyle.LAGER)
                     .upc(BEER_16_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
@@ -196,7 +196,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("Pac-Man")
-                    .beerStyle(BeerStyleEnum.STOUT)
+                    .beerStyle(BeerStyle.STOUT)
                     .upc(BEER_17_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
@@ -204,7 +204,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("Ro Sham Bo")
-                    .beerStyle(BeerStyleEnum.IPA)
+                    .beerStyle(BeerStyle.IPA)
                     .upc(BEER_18_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
@@ -212,7 +212,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("Summer Wheatly")
-                    .beerStyle(BeerStyleEnum.WHEAT)
+                    .beerStyle(BeerStyle.WHEAT)
                     .upc(BEER_19_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
@@ -220,7 +220,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("Java Jill")
-                    .beerStyle(BeerStyleEnum.LAGER)
+                    .beerStyle(BeerStyle.LAGER)
                     .upc(BEER_20_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
@@ -228,7 +228,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("Bike Trail Pale")
-                    .beerStyle(BeerStyleEnum.PALE_ALE)
+                    .beerStyle(BeerStyle.PALE_ALE)
                     .upc(BEER_21_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
@@ -236,7 +236,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("N.Z.P")
-                    .beerStyle(BeerStyleEnum.IPA)
+                    .beerStyle(BeerStyle.IPA)
                     .upc(BEER_22_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
@@ -244,7 +244,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("Stawberry Blond")
-                    .beerStyle(BeerStyleEnum.WHEAT)
+                    .beerStyle(BeerStyle.WHEAT)
                     .upc(BEER_23_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
@@ -252,7 +252,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("Loco")
-                    .beerStyle(BeerStyleEnum.PORTER)
+                    .beerStyle(BeerStyle.PORTER)
                     .upc(BEER_24_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
@@ -260,7 +260,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("Spocktoberfest")
-                    .beerStyle(BeerStyleEnum.STOUT)
+                    .beerStyle(BeerStyle.STOUT)
                     .upc(BEER_25_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
@@ -268,7 +268,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("Beach Blond Ale")
-                    .beerStyle(BeerStyleEnum.ALE)
+                    .beerStyle(BeerStyle.ALE)
                     .upc(BEER_26_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
@@ -276,7 +276,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("Bimini Twist IPA")
-                    .beerStyle(BeerStyleEnum.IPA)
+                    .beerStyle(BeerStyle.IPA)
                     .upc(BEER_27_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
@@ -284,7 +284,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("Rod Bender Red Ale")
-                    .beerStyle(BeerStyleEnum.ALE)
+                    .beerStyle(BeerStyle.ALE)
                     .upc(BEER_28_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
@@ -292,7 +292,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("Floating Dock")
-                    .beerStyle(BeerStyleEnum.SAISON)
+                    .beerStyle(BeerStyle.SAISON)
                     .upc(BEER_29_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
@@ -300,7 +300,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("El Hefe")
-                    .beerStyle(BeerStyleEnum.WHEAT)
+                    .beerStyle(BeerStyle.WHEAT)
                     .upc(BEER_30_UPC)
                     .price(new BigDecimal(BigInteger.valueOf(random.nextInt(10000)), 2))
                     .quantityOnHand(random.nextInt(5000))
